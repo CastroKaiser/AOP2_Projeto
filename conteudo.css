@@ -29,7 +29,7 @@ nav a.ativo {
   letter-spacing: 0.1em;
   text-transform: uppercase;
   padding: 5px 14px;
-
+  border-radius: 20px;
   margin-bottom: 1.25rem;
 }
 
@@ -360,26 +360,141 @@ nav a.ativo {
   color: #ffffff;
 }
 
-.subtitulo-secao {
-  color: #6b7280;
-  font-family: Arial, sans-serif;
-  font-size: 0.95rem;
+/* ===========================
+   PÁGINA DE CONTATO
+=========================== */
+.contato-layout {
+  display: grid;
+  grid-template-columns: 1fr 380px;
+  gap: 2.5rem;
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* FORMULÁRIO */
+.formulario-box h2,
+.info-box h2 {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #111827;
   margin-bottom: 1.5rem;
 }
 
-.video-wrapper {
-  position: relative;
-  padding-bottom: 56.25%; /* proporção 16:9 */
-  height: 0;
-  overflow: hidden;
+textarea {
+  resize: none; 
+}
+
+.campo {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1.25rem;
+}
+
+.campo label {
+  font-family: Arial, sans-serif;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #374151;
+  margin-bottom: 0.4rem;
+}
+
+.campo input,
+.campo select,
+.campo textarea {
+  font-family: Arial, sans-serif;
+  font-size: 0.9rem;
+  color: #111827;
+  background-color: #ffffff;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  padding: 10px 14px;
+  outline: none;
+  transition: border 0.15s;
+}
+
+.campo input:focus,
+.campo select:focus,
+.campo textarea:focus {
+  border-color: #111827;
+}
+
+.campo input::placeholder,
+.campo textarea::placeholder {
+  color: #9ca3af;
+}
+
+.campo textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.btn-enviar {
+  width: 100%;
+  background-color: #111827;
+  color: #ffffff;
+  font-family: Arial, sans-serif;
+  font-size: 0.95rem;
+  font-weight: 600;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background 0.15s;
+  margin-top: 0.5rem;
+}
+
+.btn-enviar:hover {
+  background-color: #1f2937;
+}
+
+/* INFO */
+.info-box {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+}
+
+.info-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  background-color: #f9fafb;
+  border: 1px solid #e5e7eb;
   border-radius: 10px;
 }
 
-.video-wrapper iframe {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border: none;
+.info-icone {
+  font-size: 1.5rem;
+  flex-shrink: 0;
+}
+
+.info-item h3 {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 0.2rem;
+}
+
+.info-item p {
+  font-size: 0.875rem;
+  color: #6b7280;
+  font-family: Arial, sans-serif;
+  margin: 0;
+}
+
+.aviso-box {
+  background-color: #fffbeb;
+  border: 1px solid #fde68a;
+  border-radius: 10px;
+  padding: 1rem 1.25rem;
+  margin-top: auto;
+}
+
+.aviso-box p {
+  font-size: 0.85rem;
+  color: #92400e;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  line-height: 1.6;
 }

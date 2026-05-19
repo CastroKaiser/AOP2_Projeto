@@ -1,27 +1,124 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contato — Alfa Finance</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="conteudo.css">
 </head>
 <body>
-    <header>
-        <div class="logo">
-            <img src="assets/logo.png" alt="Logo Meus Investimentos">
-            <h1>Alfa Finance</h1>
+
+  <header>
+    <div class="logo">
+      <img src="assets/logo.png" alt="Logo Meus Investimentos">
+      <h1>Alfa Finance</h1>
+    </div>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="conteudo_financa1.html">Fundos Imobiliários</a>
+      <a href="conteudo_financa2.html">Ações</a>
+      <a href="conteudo_financa3.html">Criptomoedas</a>
+      <a href="contato.html" class="ativo">Contato</a>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero-conteudo" style="background-color: #111827;">
+      <span class="categoria-tag">Contato</span>
+      <h2>Fale conosco</h2>
+      <p>Tem dúvidas, sugestões ou quer saber mais sobre investimentos? Manda uma mensagem.</p>
+    </section>
+
+    <!-- FORMULÁRIO + INFO -->
+    <section class="conteudo-secao">
+      <div class="contato-layout">
+
+        <!-- FORMULÁRIO -->
+        <div class="formulario-box">
+          <h2>Envie uma mensagem</h2>
+
+          <form action="#" method="post">
+
+            <div class="campo">
+              <label for="nome">Nome completo</label>
+              <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+            </div>
+
+            <div class="campo">
+              <label for="email">E-mail</label>
+              <input type="email" id="email" name="email" placeholder="seu@email.com" required>
+            </div>
+
+            <div class="campo">
+              <label for="assunto">Assunto</label>
+              <select id="assunto" name="assunto">
+                <option value="">Selecione um assunto</option>
+                <option value="duvida">Dúvida sobre investimentos</option>
+                <option value="sugestao">Sugestão de conteúdo</option>
+                <option value="erro">Reportar um erro</option>
+                <option value="outro">Outro</option>
+              </select>
+            </div>
+
+            <div class="campo">
+              <label for="mensagem">Mensagem</label>
+              <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem aqui..."  required></textarea>
+            </div>
+
+            <button type="submit" class="btn-enviar">Enviar mensagem</button>
+
+          </form>
         </div>
-        <nav>
-            <a href="index.html">Início</a>
-            <a href="/conteudo_financa1.html">Fundos de Imobiliários</a>
-            <a href="/conteudo_financa2.html">Ações</a>
-            <a href="/conteudo_financa3.html">Criptomoedas</a>
-            <a href="/contato.html">Contatos</a>
-        </nav>
-    </header>
-    <main>
-    
-    </main>
+
+        <!-- INFORMAÇÕES -->
+        <div class="info-box">
+          <h2>Informações</h2>
+
+          <div class="info-item">
+            <span class="info-icone">📧</span>
+            <div>
+              <h3>E-mail</h3>
+              <p>castro.uvv@universidade.com.br</p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <span class="info-icone">📍</span>
+            <div>
+              <h3>Localização</h3>
+              <p>Vitória, Espírito Santo — Brasil</p>
+            </div>
+          </div>
+
+          <div class="info-item">
+            <span class="info-icone">🕐</span>
+            <div>
+              <h3>Tempo de resposta</h3>
+              <p>Respondemos em até 2 dias úteis</p>
+            </div>
+          </div>
+
+          <div class="aviso-box">
+            <p>⚠️ Este site tem fins <strong>educacionais</strong>. Os campos são apenas visuais e não enviaremos para nenhum banco de dados.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2025 Meus Investimentos</p>
+    <nav>
+      <a href="index.html">Início</a>
+      <a href="sobre.html">Sobre</a>
+      <a href="contato.html">Contato</a>
+    </nav>
+  </footer>
+
 </body>
 </html>
